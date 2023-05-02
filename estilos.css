@@ -1,0 +1,40 @@
+
+h1 {
+  color: red;
+  font-size: 35px;
+}
+
+.clase {
+  color: green;
+  font-size: 18px;
+}
+
+#id {
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+ul li {
+  color: black;
+  font-size: 18px;
+}
+
+a[target="_blank"] {
+  color: purple;
+  text-decoration: none;
+}
+
+hr{
+  border-color: yellow;
+  border-width: 2px;
+  margin: 10px;
+  background-color: blue;
+}
+th, td{
+  text-align: left;
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+tr:nth-child(even){
+  background-color: #f2f2f2;
+}
