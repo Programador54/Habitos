@@ -5,16 +5,6 @@
      <link rel="stylesheet" type="text/css" href="estilos.css">
   </head>
   <body bgcolor="#fffff">
-    <input type="text" id="altura" value="altura">
-    <input type="text" id="peso" value="peso">
-    <button onclick="calcular()">Calcular</button>
-    <script>
-      function ims(){
-      var altura=document.getElementById("altura").value;
-      var peso=document.getElementById("peso").value;
-      var ims=altura*altura/peso;
-      document.writeln(ims);}
-    </script>
     <div align="left"><img src="cecy.png" width="20%" ></div>
     <div align="right"><img src="1.png" width="10%" align="right"></div>
     <h1><font color="blue"><center>Hábitos Alimenticios y Vida Saludable en CECyTE 06</center></font></h1>
@@ -119,6 +109,26 @@ Asegúrate de incluir en tu dieta una variedad de frutas y verduras, granos ente
 Recuerda que pequeños cambios en tu dieta pueden marcar una gran diferencia en tu salud y bienestar a largo plazo. ¡Así que adelante, haz elecciones saludables y disfruta de una vida activa y feliz!</font></p>
 
 
+    <h1>Calculadora de IMC</h1>
+	<form>
+		<label>Peso (kg): </label>
+		<input type="number" id="peso"><br><br>
+		<label>Altura (m): </label>
+		<input type="number" id="altura"><br><br>
+		<button type="button" onclick="calcularIMC()">Calcular</button>
+	</form>
+	<br>
+	<p>Su IMC es: <span id="resultado"></span></p>
+
+	<script>
+		function calcularIMC() {
+			var peso = document.getElementById("peso").value;
+			var altura = document.getElementById("altura").value;
+			var resultado = peso / (altura * altura);
+			document.getElementById("resultado").innerHTML = resultado.toFixed(2);
+		}
+	</script>
+    
     <h1 style="text-align: center;">Minijuegos</h1>
     <ul style="display: inline-flex; list-style-type: none;">
     <li style="padding: 10px;"><div align="center">
